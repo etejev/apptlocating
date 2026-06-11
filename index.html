@@ -3,22 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Site Down</title>
-    <meta name="description" content="">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https:; img-src 'self' https: data:; font-src 'self' https: data:; connect-src 'none'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'">
+    <title>Home</title>
+    <meta name="description" content="A fast, responsive website made with a local visual builder.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https:; img-src 'self' https: data:; font-src 'self' https: data:; connect-src 'self' https:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self' https://forms.zoho.com">
 
     <style>
 
 *{box-sizing:border-box}
-html,body{margin:0;min-height:100%}
-body.sf-page{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;color:#111827;background:#ffffff;line-height:1.5}
+html,body{margin:0;min-height:100%;width:100%}
+body.sf-page{font-family:Avenir Next, Avenir, Helvetica, Arial, sans-serif;color:#111827;background:#ffffff;line-height:1.5;overflow-x:hidden}
 body.sf-theme-dark{color:#e5eefb;background:#0f172a}
 img{max-width:100%}
-.sf-page-stage{position:relative;min-height:100vh;overflow:hidden}
+.sf-page-stage{position:relative;width:100%;min-height:100vh;overflow:hidden}
 .sf-floating-layer{position:absolute;inset:0;pointer-events:none;z-index:20}
 .free-element{position:absolute;display:flex;align-items:center;justify-content:center;background:var(--free-bg,#fff);color:var(--free-color,#111827);border-radius:var(--free-radius,0);box-shadow:var(--free-shadow,none);border:var(--free-border,0 solid transparent);opacity:var(--free-opacity,1);pointer-events:auto;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
 .free-element .sf-btn{width:100%;height:100%;margin:0}.sf-free-text{width:100%;height:100%;display:flex;align-items:center;padding:12px;line-height:1.25}.sf-shape,.sf-line{width:100%;height:100%;background:var(--free-bg,#2563eb);border-radius:inherit}.sf-shape-circle{border-radius:50%}.sf-shape-pill{border-radius:999px}
-.sf-block{background:var(--block-bg,#fff);color:var(--block-color,#111827);padding:var(--block-py,80px) var(--block-px,48px);min-height:var(--block-min,auto);border:var(--block-border,0 solid transparent);opacity:var(--block-opacity,1);position:relative}
+.sf-block{background:var(--block-bg,#fff);color:var(--block-color,#111827);padding:var(--block-py,80px) var(--block-px,48px);min-height:var(--block-min,auto);border:var(--block-border,0 solid transparent);opacity:var(--block-opacity,1);position:relative;width:100%}
 .sf-inner{max-width:var(--block-max,1120px);margin:0 auto}
 .sf-align-left{text-align:left}.sf-align-center{text-align:center}.sf-align-right{text-align:right}
 .sf-eyebrow{margin:0 0 12px;color:var(--block-accent,#2563eb);font-weight:750;text-transform:uppercase;font-size:13px}
@@ -30,16 +30,16 @@ img{max-width:100%}
 .sf-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.9fr);gap:54px;align-items:center}.sf-hero-center .sf-hero-grid{grid-template-columns:1fr;text-align:center}.sf-hero-center .sf-media{max-width:820px;margin:20px auto 0}
 .sf-media{overflow:hidden;border-radius:var(--block-radius,18px);box-shadow:var(--block-shadow,0 18px 50px rgba(15,23,42,.18));background:#e5e7eb}.sf-media img{display:block;width:100%;height:100%;min-height:280px;object-fit:cover}
 .sf-navbar{z-index:40}.sf-sticky-nav{position:sticky;top:0}.sf-navbar .sf-inner,.sf-footer .sf-inner{display:flex;align-items:center;justify-content:space-between;gap:22px}.sf-nav-brand,.sf-footer-brand{font-weight:800;font-size:20px;color:currentColor;text-decoration:none}
-.sf-nav-shell{display:flex;align-items:center;gap:14px}.sf-nav-links,.sf-footer-links{display:flex;align-items:center;flex-wrap:wrap;gap:16px}.sf-nav-links a,.sf-footer-links a{color:currentColor;text-decoration:none}.sf-nav-item{position:relative}.sf-nav-item>a::after{content:' v';font-size:.78em;opacity:.7}.sf-dropdown{display:none;position:absolute;top:calc(100% + 8px);left:0;min-width:170px;padding:8px;border-radius:12px;background:#fff;color:#111827;box-shadow:0 18px 50px rgba(15,23,42,.18);z-index:50}.sf-dropdown a{display:block;padding:8px 10px;border-radius:8px}.sf-dropdown a:hover{background:#f1f5f9}.sf-nav-item:hover .sf-dropdown,.sf-nav-item:focus-within .sf-dropdown,.sf-nav-item.open .sf-dropdown{display:block}
+.sf-nav-shell{display:flex;align-items:center;gap:14px}.sf-nav-shell-left{order:-1}.sf-nav-links,.sf-footer-links{display:flex;align-items:center;flex-wrap:wrap;gap:16px}.sf-nav-links a,.sf-footer-links a{color:currentColor;text-decoration:none}.sf-nav-item{position:relative}.sf-nav-item>a::after{content:' v';font-size:.78em;opacity:.7}.sf-dropdown{display:none;position:absolute;top:calc(100% + 8px);left:0;min-width:170px;padding:8px;border-radius:12px;background:#fff;color:#111827;box-shadow:0 18px 50px rgba(15,23,42,.18);z-index:50}.sf-dropdown a{display:block;padding:8px 10px;border-radius:8px}.sf-dropdown a:hover{background:#f1f5f9}.sf-nav-item:hover .sf-dropdown,.sf-nav-item:focus-within .sf-dropdown,.sf-nav-item.open .sf-dropdown{display:block}
 .sf-hamburger{display:none;width:42px;height:38px;border:1px solid color-mix(in srgb,currentColor 18%,transparent);border-radius:10px;background:transparent;color:currentColor}.sf-hamburger span{display:block;width:18px;height:2px;margin:4px auto;background:currentColor;border-radius:99px}.sf-desktop-hamburger .sf-hamburger{display:block}.sf-desktop-hamburger .sf-nav-links,.sf-desktop-hamburger .sf-nav-cta{display:none}.sf-desktop-hamburger.open .sf-nav-links,.sf-desktop-hamburger.open .sf-nav-cta{display:flex}.sf-desktop-hamburger.open{position:relative}.sf-desktop-hamburger.open .sf-nav-links{position:absolute;right:0;top:calc(100% + 10px);display:grid;min-width:230px;padding:12px;border-radius:14px;background:#fff;color:#111827;box-shadow:0 18px 50px rgba(15,23,42,.18)}
 .sf-card-grid,.sf-gallery-grid{display:grid;grid-template-columns:repeat(var(--columns,3),minmax(0,1fr));gap:18px;margin-top:28px}.sf-card{padding:22px;border:1px solid color-mix(in srgb,currentColor 14%,transparent);border-radius:var(--block-radius,16px);background:color-mix(in srgb,var(--block-bg,#fff) 88%,#fff);box-shadow:var(--block-shadow,none)}.sf-card h3{margin:0 0 8px}.sf-card p{margin:0;color:color-mix(in srgb,currentColor 68%,transparent);line-height:1.55}
 .sf-gallery-item{overflow:hidden;border-radius:var(--block-radius,16px);background:#e5e7eb;margin:0}.sf-gallery-item img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}.sf-gallery-item figcaption,.sf-image figcaption{padding:10px 0 0;color:color-mix(in srgb,currentColor 68%,transparent);font-size:14px}
 .sf-image figure{margin:0}.sf-image img{display:block;width:100%;border-radius:var(--block-radius,16px);box-shadow:var(--block-shadow,none);object-fit:cover}
-.sf-form-card{display:grid;gap:12px;max-width:620px;margin:28px auto 0;padding:24px;border-radius:var(--block-radius,16px);background:#fff;box-shadow:var(--block-shadow,0 18px 50px rgba(15,23,42,.16))}.sf-form-card input,.sf-form-card textarea{width:100%;border:1px solid #d1d5db;border-radius:8px;padding:12px;font:inherit}.sf-form-card textarea{min-height:120px}
+.sf-form-card{display:grid;gap:12px;max-width:620px;margin:28px auto 0;padding:24px;border-radius:var(--block-radius,16px);background:#fff;box-shadow:var(--block-shadow,0 18px 50px rgba(15,23,42,.16))}.sf-form-card input,.sf-form-card textarea{width:100%;border:1px solid #d1d5db;border-radius:8px;padding:12px;font:inherit}.sf-form-card textarea{min-height:120px}.sf-form-status{min-height:20px;margin:0;color:#475569;font-size:14px}.sf-zoho-embed iframe{max-width:100%}
 .sf-spacer{padding:0;height:var(--spacer-height,80px)}
 .sf-hover-lift:hover{transform:translateY(-4px)}.sf-hover-grow:hover{transform:scale(1.035)}.sf-hover-glow:hover{filter:drop-shadow(0 0 18px color-mix(in srgb,var(--block-accent,#2563eb) 50%,transparent))}.sf-hover-tilt:hover{transform:rotate(-1.5deg) scale(1.015)}
 .sf-anim-fade{animation:sfFade .55s ease both}.sf-anim-rise{animation:sfRise .55s ease both}.sf-anim-pop{animation:sfPop .42s ease both}@keyframes sfFade{from{opacity:0}to{opacity:1}}@keyframes sfRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes sfPop{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}
-@media (max-width:760px){.sf-block{padding-left:24px!important;padding-right:24px!important}.sf-hero-grid,.sf-navbar .sf-inner,.sf-footer .sf-inner{grid-template-columns:1fr;flex-direction:column;align-items:flex-start}.sf-card-grid,.sf-gallery-grid{grid-template-columns:1fr!important}.sf-title{font-size:42px}.sf-has-hamburger .sf-hamburger{display:block}.sf-has-hamburger .sf-nav-links,.sf-has-hamburger .sf-nav-cta{display:none}.sf-has-hamburger.open .sf-nav-links,.sf-has-hamburger.open .sf-nav-cta{display:flex}.sf-has-hamburger.open .sf-nav-links{display:grid;gap:10px}.sf-nav-shell{align-items:flex-start;flex-direction:column}}
+@media (max-width:760px){.sf-block{padding:var(--block-py-mobile,44px) var(--block-px-mobile,24px)!important;min-height:var(--block-min-mobile,auto)}.sf-inner{max-width:var(--block-max-mobile,720px)}.sf-hero-grid,.sf-navbar .sf-inner,.sf-footer .sf-inner{grid-template-columns:1fr;flex-direction:column;align-items:flex-start}.sf-card-grid,.sf-gallery-grid{grid-template-columns:1fr!important}.sf-title{font-size:clamp(32px,12vw,48px)}.sf-heading{font-size:clamp(26px,9vw,38px)}.sf-has-hamburger .sf-hamburger{display:block}.sf-has-hamburger .sf-nav-links,.sf-has-hamburger .sf-nav-cta{display:none}.sf-has-hamburger.open .sf-nav-links,.sf-has-hamburger.open .sf-nav-cta{display:flex}.sf-has-hamburger.open .sf-nav-links{display:grid;gap:10px}.sf-nav-shell{align-items:flex-start;flex-direction:column}.free-element{left:calc(var(--free-x-mobile)/390*100%);top:calc(var(--free-y-mobile)*1px);width:calc(var(--free-w-mobile)/390*100%);height:calc(var(--free-h-mobile)*1px)}.sf-free-text{font-size:var(--free-font-size-mobile,var(--free-font-size,16px))!important}}
 
 
     </style>
@@ -47,25 +47,118 @@ img{max-width:100%}
 <body class="sf-page sf-theme-light">
 <div class="sf-page-stage">
 <div class="sf-page-content">
-<section id="birpjxab7" class="sf-block sf-spacer " style="--block-bg:#ffffff;--block-color:#111827;--block-accent:#2563eb;--block-py:70px;--block-px:30px;--block-max:1120px;--block-radius:16px;--block-min:0px;--block-shadow:none;--block-border:0px solid #d8dee7;--block-opacity:1 --spacer-height:221px;"></section>
-<section id="b71x7660s" class="sf-block sf-spacer " style="--block-bg:#ffffff;--block-color:#111827;--block-accent:#2563eb;--block-py:0px;--block-px:0px;--block-max:1120px;--block-radius:16px;--block-min:0px;--block-shadow:none;--block-border:0px solid #d8dee7;--block-opacity:1 --spacer-height:80px;"></section>
-<section id="bxh8i6jdj" class="sf-block sf-spacer " style="--block-bg:#ffffff;--block-color:#111827;--block-accent:#2563eb;--block-py:0px;--block-px:0px;--block-max:1120px;--block-radius:16px;--block-min:0px;--block-shadow:none;--block-border:0px solid #d8dee7;--block-opacity:1 --spacer-height:80px;"></section>
 
-        <section id="buz6i6i9v" class="sf-block sf-text sf-align-left" style="--block-bg:#ffffff;--block-color:#111827;--block-accent:#2563eb;--block-py:167px;--block-px:48px;--block-max:1120px;--block-radius:16px;--block-min:0px;--block-shadow:0 18px 50px rgba(15, 23, 42, 0.16);--block-border:0px solid #d8dee7;--block-opacity:1">
+        <section id="b4g4ima0e" class="sf-block sf-navbar sf-align-left" style="--block-bg:#ffffff;--block-color:#111827;--block-accent:#2563eb;--block-py:16px;--block-px:42px;--block-max:1120px;--block-radius:0px;--block-min:0px;--block-py-mobile:9px;--block-px-mobile:24px;--block-max-mobile:720px;--block-min-mobile:0px;--block-shadow:none;--block-border:0px solid #d8dee7;--block-opacity:1">
             <div class="sf-inner">
                 
-            <p class="sf-eyebrow" >ERROR 404</p>
-            <h2 class="sf-heading" >Site in Development, updates soon!</h2>
-            <p class="sf-copy " ></p>
+            
+            <div class="sf-nav-shell sf-nav-shell-left sf-has-hamburger sf-desktop-hamburger">
+                <button class="sf-hamburger" type="button" data-nav-toggle aria-expanded="false" aria-label="Open site pages"><span></span><span></span><span></span></button>
+                <nav class="sf-nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav>
+                
+            </div>
+        
+            <a class="sf-nav-brand" href="index.html" >SiteForge</a>
+            
+            <a class="sf-btn sf-btn-primary sf-nav-cta" href="#contact">Contact</a>
+        
+            </div>
+        </section>
+    
+
+        <section id="bai45myvr" class="sf-block sf-hero sf-align-left" style="--block-bg:linear-gradient(135deg, #f8fbff, #ffffff);--block-color:#111827;--block-accent:#2563eb;--block-py:112px;--block-px:48px;--block-max:1180px;--block-radius:0px;--block-min:560px;--block-py-mobile:62px;--block-px-mobile:24px;--block-max-mobile:720px;--block-min-mobile:364px;--block-shadow:0 18px 50px rgba(15, 23, 42, 0.16);--block-border:0px solid #d8dee7;--block-opacity:1">
+            <div class="sf-inner">
+                
+            <div class="sf-hero-grid">
+                <div>
+                    <p class="sf-eyebrow" >SiteForge</p>
+                    <h1 class="sf-title" >Build a clean responsive site</h1>
+                    <p class="sf-copy" >Start with a minimal page, drag in sections, place layers, tune mobile overrides, and push the finished HTML to production.</p>
+                    <div class="sf-button-row">
+                        <a class="sf-btn sf-btn-primary" href="#contact">Contact</a>
+                        <a class="sf-btn sf-btn-secondary" href="#work">View pages</a>
+                    </div>
+                </div>
+                <div class="sf-media"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Modern workspace"></div>
+            </div>
+        
+            </div>
+        </section>
+    
+
+        <section id="bj8h2s4q0" class="sf-block sf-cards sf-align-left" style="--block-bg:#ffffff;--block-color:#111827;--block-accent:#2563eb;--block-py:76px;--block-px:48px;--block-max:1120px;--block-radius:16px;--block-min:0px;--block-py-mobile:42px;--block-px-mobile:24px;--block-max-mobile:720px;--block-min-mobile:0px;--block-shadow:0 18px 50px rgba(15, 23, 42, 0.16);--block-border:0px solid #d8dee7;--block-opacity:1">
+            <div class="sf-inner">
+                
+            <p class="sf-eyebrow" >FEATURES</p>
+            <h2 class="sf-heading" >Editor features included</h2>
+            <div class="sf-card-grid" style="--columns:3">
+            <article class="sf-card">
+                <h3>Responsive edits</h3>
+                <p>Desktop changes flow to mobile, with mobile-only corrections when needed.</p>
+            </article>
+        
+            <article class="sf-card">
+                <h3>Visible pages</h3>
+                <p>Use the eye control to decide which pages appear in the hamburger menu.</p>
+            </article>
+        
+            <article class="sf-card">
+                <h3>Production push</h3>
+                <p>Configure GitHub once, then push the current HTML from the toolbar.</p>
+            </article>
+        </div>
+        
+            </div>
+        </section>
+    
+
+        <section id="bjhb4l4h5" class="sf-block sf-form sf-align-left" style="--block-bg:#f7f9fc;--block-color:#111827;--block-accent:#2563eb;--block-py:76px;--block-px:48px;--block-max:1120px;--block-radius:16px;--block-min:0px;--block-py-mobile:42px;--block-px-mobile:24px;--block-max-mobile:720px;--block-min-mobile:0px;--block-shadow:0 18px 50px rgba(15, 23, 42, 0.16);--block-border:0px solid #d8dee7;--block-opacity:1">
+            <div class="sf-inner">
+                
+            <p class="sf-eyebrow" >Contact</p>
+            <h2 class="sf-heading" >Start the conversation</h2>
+            <p class="sf-copy" >This static form is ready to connect to your form provider or custom backend.</p>
+            <form class="sf-form-card" ><input name="name" type="text"  placeholder="Name"><input name="email" type="email"  placeholder="Email"><textarea name="project_details" placeholder="Project details"></textarea><button class="sf-btn sf-btn-primary" type="submit">Send message</button><p class="sf-form-status" aria-live="polite"></p></form>
+        
+            </div>
+        </section>
+    
+
+        <section id="b0u4z2t4r" class="sf-block sf-footer sf-align-left" style="--block-bg:#111827;--block-color:#ffffff;--block-accent:#2563eb;--block-py:32px;--block-px:48px;--block-max:1120px;--block-radius:0px;--block-min:0px;--block-py-mobile:18px;--block-px-mobile:24px;--block-max-mobile:720px;--block-min-mobile:0px;--block-shadow:none;--block-border:0px solid #d8dee7;--block-opacity:1">
+            <div class="sf-inner">
+                
+            <div>
+                <div class="sf-footer-brand" >Your Brand</div>
+                <p>Copyright 2026. All rights reserved.</p>
+            </div>
+            <nav class="sf-footer-links"><a href="#">Privacy</a><a href="#">Terms</a></nav>
         
             </div>
         </section>
     
 </div>
 <div class="sf-floating-layer">
-        <div class="free-element  sf-hover-lift" data-free-id="bzi6l4zkl" style="left:0px;top:28px;width:1302px;height:81px;z-index:20;transform:rotate(0deg);--free-bg:linear-gradient(135deg, #2563eb, #0f766e);--free-color:#ffffff;--free-radius:0px;--free-shadow:0 18px 50px rgba(15, 23, 42, 0.16);--free-border:0px solid #1d4ed8;--free-opacity:1">
+        <div class="free-element  sf-hover-lift" data-free-id="b70bydxgh" style="--free-x:950;--free-y:160;--free-w:170;--free-h:170;--free-x-mobile:304;--free-y-mobile:160;--free-w-mobile:133;--free-h-mobile:170;left:calc(var(--free-x) / 1280 * 100%);top:160px;width:calc(var(--free-w) / 1280 * 100%);height:170px;z-index:20;transform:rotate(0deg);--free-bg:linear-gradient(135deg, #93c5fd, #22c55e);--free-color:#ffffff;--free-font-size:18px;--free-font-size-mobile:15px;--free-radius:999px;--free-shadow:0 18px 50px rgba(15, 23, 42, 0.16);--free-border:0px solid #1d4ed8;--free-opacity:0.78">
             
-            <div class="sf-shape sf-shape-rectangle"></div>
+            <div class="sf-shape sf-shape-rounded"></div>
+        </div>
+    
+
+        <div class="free-element  sf-hover-lift" data-free-id="bsoocfgqs" style="--free-x:96;--free-y:520;--free-w:220;--free-h:58;--free-x-mobile:31;--free-y-mobile:520;--free-w-mobile:172;--free-h-mobile:58;left:calc(var(--free-x) / 1280 * 100%);top:520px;width:calc(var(--free-w) / 1280 * 100%);height:58px;z-index:20;transform:rotate(0deg);--free-bg:#2563eb;--free-color:#ffffff;--free-font-size:18px;--free-font-size-mobile:15px;--free-radius:14px;--free-shadow:0 18px 50px rgba(15, 23, 42, 0.16);--free-border:0px solid #1d4ed8;--free-opacity:1">
+            
+            <a class="sf-btn sf-btn-primary" href="#">Drag my handles</a>
+        </div>
+    
+
+        <div class="free-element  " data-free-id="bc6yjluy9" style="--free-x:760;--free-y:452;--free-w:330;--free-h:110;--free-x-mobile:243;--free-y-mobile:452;--free-w-mobile:257;--free-h-mobile:110;left:calc(var(--free-x) / 1280 * 100%);top:452px;width:calc(var(--free-w) / 1280 * 100%);height:110px;z-index:20;transform:rotate(0deg);--free-bg:#000000;--free-color:#111827;--free-font-size:18px;--free-font-size-mobile:15px;--free-radius:14px;--free-shadow:0 18px 50px rgba(15, 23, 42, 0.16);--free-border:1px solid #d8dee7;--free-opacity:1">
+            
+            <div class="sf-free-text" style="font-size:var(--free-font-size, 18px);font-weight:650" >Click once and type. Drag edges to resize this text box.</div>
+        </div>
+    
+
+        <div class="free-element  sf-hover-lift" data-free-id="b8as5gn19" style="--free-x:96;--free-y:690;--free-w:360;--free-h:5;--free-x-mobile:31;--free-y-mobile:690;--free-w-mobile:281;--free-h-mobile:5;left:calc(var(--free-x) / 1280 * 100%);top:690px;width:calc(var(--free-w) / 1280 * 100%);height:5px;z-index:20;transform:rotate(0deg);--free-bg:#2563eb;--free-color:#ffffff;--free-font-size:18px;--free-font-size-mobile:15px;--free-radius:999px;--free-shadow:none;--free-border:0px solid #1d4ed8;--free-opacity:1">
+            
+            <div class="sf-line"></div>
         </div>
     </div>
 </div>
@@ -95,6 +188,42 @@ document.addEventListener('click', function(event) {
   if (!shell) return;
   shell.classList.toggle('open');
   button.setAttribute('aria-expanded', shell.classList.contains('open') ? 'true' : 'false');
+});
+document.addEventListener('submit', function(event) {
+  var form = event.target.closest('[data-zoho-endpoint]');
+  if (!form) return;
+  event.preventDefault();
+  var status = form.querySelector('.sf-form-status');
+  var endpoint = form.getAttribute('data-zoho-endpoint');
+  var mapText = form.getAttribute('data-zoho-map') || '';
+  var data = {};
+  Array.prototype.forEach.call(form.elements, function(field) {
+    if (!field.name || field.type === 'submit' || field.tagName === 'BUTTON') return;
+    var value = field.value || '';
+    if (field.type === 'tel') value = value.replace(/[^0-9+]/g, '');
+    data[field.name] = value;
+  });
+  var mapped = {};
+  mapText.split('\n').forEach(function(line) {
+    var parts = line.split('=');
+    if (!parts[0]) return;
+    var zohoName = parts[0].trim();
+    var localName = (parts[1] || parts[0]).trim();
+    mapped[zohoName] = data[localName] || '';
+  });
+  if (!Object.keys(mapped).length) mapped = data;
+  if (status) status.textContent = 'Sending...';
+  fetch(endpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(mapped)
+  }).then(function(response) {
+    if (!response.ok) throw new Error('Submission failed');
+    form.reset();
+    if (status) status.textContent = 'Sent successfully.';
+  }).catch(function() {
+    if (status) status.textContent = 'Could not send. Check the required fields and try again.';
+  });
 });
 
 </script>
